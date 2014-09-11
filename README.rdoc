@@ -1,0 +1,16 @@
+Ruby on Rails Test Task
+
+We can use ConfigSetting model to store config values in following manner:
+
+1.) Create or update any key:
+
+  ConfigSetting.any_key = any_value #value can be String, Fixnum, Float, Boolean
+
+2.) To get value for any stored key
+
+  ConfigSetting.any_key #it will return the stored value for 'any_key', if not stored, ot woll return 'nil'
+
+3.) Delete any configuration
+
+  ConfigSetting.delete(any_key) #it will delete record for corrosponding key
+
